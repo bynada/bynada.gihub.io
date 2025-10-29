@@ -278,8 +278,74 @@ nav ul li a:hover::after {
     color: var(--white-color);
 }
 
+/* ==== SINGLE PROJECT CARD LAYOUT ==== */
+#projects .projects-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#projects .project-card {
+  max-width: 820px;
+  width: 100%;
+}
 
-/* --- 6. Tabular Skills Section --- */
+/* ==== 6. EXPERIENCE SECTION ==== */
+.exp-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.exp-item {
+  background: var(--card-bg-color);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  border: 1px solid #eef2ef;
+}
+
+.exp-meta h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+}
+
+.exp-dates, .exp-location {
+  display: inline-block;
+  font-size: 0.95rem;
+  color: var(--light-text-color);
+  margin-right: 12px;
+}
+
+.exp-points {
+  margin: 14px 0 10px 18px;
+}
+.exp-points li {
+  margin-bottom: 8px;
+}
+
+.exp-badges { margin-top: 6px; }
+.badge {
+  display: inline-block;
+  background: var(--accent-color);
+  color: #0b3d1b; /* readable on mint */
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 4px 6px 0 0;
+}
+
+/* Responsive tweaks for Experience */
+@media (max-width: 768px) {
+  .exp-item { padding: 18px; }
+}
+
+
+/* --- 7. Tabular Skills Section --- */
 #skills .container {
     max-width: 1100px;
 }
@@ -457,3 +523,9 @@ footer p {
         padding-bottom: 30px;
     }
 }
+
+/* ==== SMOOTH SCROLL OFFSET ==== */
+.section {
+  scroll-margin-top: 90px; /* prevents titles being hidden behind sticky navbar */
+}
+
