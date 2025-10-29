@@ -27,11 +27,9 @@
 <!-- HEADER SECTION -->
 <header>
     <div class="container">
-        <!--💡UPDATE: Change to your name and title-->
         <h1>Nada Farhani Rustiawan</h1>
         <p>Data Analyst</p>
         <div class="social-links">
-            <!--💡UPDATE: Add your social media links and CV file-->
             <a href="http://www.linkedin.com/in/nadafarhani" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/bynada" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
             <a href="assets/Nada_Farhani_CV.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
@@ -45,6 +43,7 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -56,10 +55,8 @@
     <div class="container">
         <h2>About Me</h2>
         <div class="about-content">
-            <!--💡UPDATE: Change the image to your own profile photo in assets/images/-->
             <img src="assets/images/profile.JPEG" alt="Nada Farhani Rustiawan" class="profile-photo">
             <div class="about-text">
-                <!--💡UPDATE: Write your own 'About Me' text here-->
                 <p>Coming from a Geophysics background, I’ve developed strong analytical and problem-solving skills that now shape my work in data analytics. I enjoy finding clarity in complexity and turning data-driven insights into solutions that create real impact.</p>
                 <p>I believe good data analysis starts with asking the right questions and ends with delivering clarity that inspires better decisions.</p>
             </div>
@@ -73,19 +70,17 @@
         <h2>My Projects</h2>
         <div class="projects-grid">
 
-            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
-            <!-- Project 1 -->
-             <div class="project-card">
-                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
-                <img src="assets/images/project-placeholder-1.jpg" alt="Project One Preview">
+            <!-- Featured Project (single) -->
+            <div class="project-card">
+                <img src="assets/images/project-lateship.jpg" alt="Late Shipment Analysis Dashboard">
                 <div class="project-card-content">
-                    <h3>Project Title One</h3>
-                    <p>A brief, one or two-sentence description of your project, what it does, and the tools you used.</p>
+                    <h3>Late Shipment Analysis — RevoU Faculty Project</h3>
+                    <p><strong>Background:</strong> Identify drivers of delayed deliveries and improve on-time performance (OTD%).<br>
+                       <strong>Method/Strategy:</strong> EDA, KPI modeling with DAX, Power Query transformations; built a monitoring dashboard.<br>
+                       <strong>Result/Output:</strong> Highlighted top delay factors (carrier, region, product line) and trend patterns to inform OTD improvement.</p>
                     <div class="project-buttons">
-                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
-                        <a href="[YOUR_GITHUB_PROJECT_URL]" target="_blank" class="btn">Documentation</a>
-                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
-                        <a href="[YOUR_LIVE_DASHBOARD_URL]" target="_blank" class="btn btn-secondary">View Dashboard</a>
+                        <a href="https://github.com/bynada/dataco-late-shipment-analytics" target="_blank" class="btn">View Code</a>
+                        <a href="https://app.powerbi.com/view?r=REPLACE" target="_blank" class="btn btn-secondary">View Dashboard</a>
                     </div>
                 </div>
             </div>
@@ -94,13 +89,75 @@
     </div>
 </section>
 
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="section">
+    <div class="container">
+        <h2>Experience</h2>
+
+        <div class="exp-timeline">
+            <!-- Item 1 -->
+            <div class="exp-item">
+                <div class="exp-meta">
+                    <h3>Data Analyst Intern — Bank Sampah Digital</h3>
+                    <span class="exp-dates">Feb 2025 – Present · Remote</span>
+                    <span class="exp-location">Indonesia</span>
+                </div>
+                <ul class="exp-points">
+                    <li>Built KPI dashboards to track volume, OTD%, and partner performance; contributed to on-time pickup improvement.</li>
+                    <li>Automated weekly reporting workflows, reducing manual work and improving consistency.</li>
+                </ul>
+                <div class="exp-badges">
+                    <span class="badge">Power BI</span>
+                    <span class="badge">DAX</span>
+                    <span class="badge">Python</span>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="exp-item">
+                <div class="exp-meta">
+                    <h3>Processing Geophysicist — PT Qyudos Geosurvey</h3>
+                    <span class="exp-dates">2023 – 2024</span>
+                    <span class="exp-location">Indonesia</span>
+                </div>
+                <ul class="exp-points">
+                    <li>Processed gravity/seismic data and produced profiles & maps for multiple survey areas.</li>
+                    <li>Standardized data structure and naming conventions to speed up collaboration.</li>
+                </ul>
+                <div class="exp-badges">
+                    <span class="badge">Surfer</span>
+                    <span class="badge">Oasis Montaj</span>
+                    <span class="badge">AutoCAD</span>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="exp-item">
+                <div class="exp-meta">
+                    <h3>Research Student — Pusat Survei Geologi</h3>
+                    <span class="exp-dates">2023</span>
+                    <span class="exp-location">Karangsambung, Kebumen</span>
+                </div>
+                <ul class="exp-points">
+                    <li>Thesis: Diabase Rock Continuity via Gravity — acquisition, processing, interpretation; delivered maps and sections.</li>
+                    <li>Documented reproducible workflows and communicated results for decision-making.</li>
+                </ul>
+                <div class="exp-badges">
+                    <span class="badge">Gravity</span>
+                    <span class="badge">Geophysics</span>
+                    <span class="badge">Reporting</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <!-- SKILLS SECTION -->
 <section id="skills" class="section">
     <div class="container">
         <h2>Technical Skillset</h2>
         <div class="skills-table">
-            
-            <!--💡UPDATE: Customize your skills in each category-->
             <!-- Column 1: Data Visualization -->
             <div class="skill-column">
                 <div class="skill-header">
@@ -151,10 +208,8 @@
 <section id="contact" class="section">
     <div class="container">
         <h2>Send me a message</h2>
-        
-        <!--💡UPDATE: Go to formsubmit.co and replace the email with your own-->
-        <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
-            <p> Interested in collaborating or have questions about my work? I'd love to hear from you!</p>
+        <form action="https://formsubmit.co/nadafarhani08@gmail.com" method="POST" class="contact-form">
+            <p>Interested in collaborating or have questions about my work? I'd love to hear from you!</p>
 
             <!-- Form Fields -->
             <div class="form-group">
@@ -173,10 +228,12 @@
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
             </div>
-            
+
+            <!-- Optional: turn off captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
             <!-- Submit Button -->
             <button type="submit" class="btn">Send Message</button>
-
         </form>
     </div>
 </section>
@@ -184,7 +241,6 @@
 <!-- FOOTER -->
 <footer>
     <div class="container">
-        <!--💡UPDATE: Change the year and your name-->
         <p>&copy; 2025 Nada. All rights reserved.</p>
     </div>
 </footer>
