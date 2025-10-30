@@ -69,15 +69,47 @@
         <h2>My Projects</h2>
         <div class="projects-grid">
 
-            <!-- Minimal Project Card (opens detail page) -->
-<a class="project-link" href="projects/late-shipment.html" target="_blank" rel="noopener">
-  <div class="project-card project-card--minimal">
-    <figure class="project-figure">
-      <img src="assets/images/project-lateship.png" alt="Late Shipment Analysis">
-      <figcaption class="project-title">Late Shipment Analysis</figcaption>
-    </figure>
+            <!-- PROJECT SECTION -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project Card -->
+      <div class="project-card project-card--minimal" onclick="openModal('lateship')">
+        <figure class="project-figure">
+          <img src="assets/images/project-lateship.png" alt="Late Shipment Analysis">
+          <figcaption class="project-title">Late Shipment Analysis</figcaption>
+        </figure>
+      </div>
+
+    </div>
   </div>
-</a>
+</section>
+
+<!-- Project Modal -->
+<div id="modal-lateship" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('lateship')">&times;</span>
+
+    <h2>Late Shipment Analysis</h2>
+    <img src="assets/images/project-lateship.png" alt="Late Shipment Dashboard" class="modal-image">
+
+    <div class="project-details">
+      <p><strong>Problem:</strong> Frequent delivery delays and inconsistent shipping performance reduced customer satisfaction and hindered logistics planning.</p>
+      <p><strong>Background:</strong> Investigated delivery delays to identify key operational and regional factors impacting on-time performance (OTD%).</p>
+      <p><strong>Method:</strong> Performed EDA and regression modeling using Python to quantify the influence of shipment features on delay likelihood.</p>
+      <p><strong>Output:</strong> Revealed significant predictors such as carrier and destination region, enabling targeted strategies that improved OTD% and overall logistics efficiency.</p>
+    </div>
+
+    <div class="project-buttons">
+      <a href="https://www.canva.com/design/DAGyf_fLCCM/j_TjP4mDmrLsmDznyjd9cQ/edit?utm_content=DAGyf_fLCCM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+         target="_blank" class="btn">Deck</a>
+      <a href="https://public.tableau.com/app/profile/nada.farhani/viz/LateShipmentAnalysis_17579374188130/Dashboard1?publish=yes" 
+         target="_blank" class="btn btn-secondary">Dashboard</a>
+    </div>
+  </div>
+</div>
 
         </div>
     </div>
@@ -271,5 +303,18 @@
 
 <script src="assets/js/main.js"></script>
 
+<script>
+function openModal(id) {
+  document.getElementById('modal-' + id).style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // prevent scrolling behind modal
+}
+
+function closeModal(id) {
+  document.getElementById('modal-' + id).style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+</script>
+
+    
 </body>
 </html>
