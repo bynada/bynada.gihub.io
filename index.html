@@ -69,51 +69,64 @@
         <h2>My Projects</h2>
         <div class="projects-grid">
 
-            <!-- PROJECT SECTION -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card-minimal" onclick="openModal('lateship')">
+                <div class="project-image-wrapper">
+                    <img src="assets/images/project-lateship.png" alt="Late Shipment Analysis">
+                    <div class="project-overlay">
+                        <i class="fas fa-eye"></i>
+                        <span>View Details</span>
+                    </div>
+                </div>
+                <div class="project-card-title">
+                    <h3>Late Shipment Analysis</h3>
+                </div>
+            </div>
 
-      <!-- Project Card -->
-      <div class="project-card project-card--minimal" onclick="openModal('lateship')">
-        <figure class="project-figure">
-          <img src="assets/images/project-lateship.png" alt="Late Shipment Analysis">
-          <figcaption class="project-title">Late Shipment Analysis</figcaption>
-        </figure>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Project Modal -->
-<div id="modal-lateship" class="modal">
-  <div class="modal-content">
-    <span class="close-btn" onclick="closeModal('lateship')">&times;</span>
-
-    <h2>Late Shipment Analysis</h2>
-    <img src="assets/images/project-lateship.png" alt="Late Shipment Dashboard" class="modal-image">
-
-    <div class="project-details">
-      <p><strong>Problem:</strong> Frequent delivery delays and inconsistent shipping performance reduced customer satisfaction and hindered logistics planning.</p>
-      <p><strong>Background:</strong> Investigated delivery delays to identify key operational and regional factors impacting on-time performance (OTD%).</p>
-      <p><strong>Method:</strong> Performed EDA and regression modeling using Python to quantify the influence of shipment features on delay likelihood.</p>
-      <p><strong>Output:</strong> Revealed significant predictors such as carrier and destination region, enabling targeted strategies that improved OTD% and overall logistics efficiency.</p>
-    </div>
-
-    <div class="project-buttons">
-      <a href="https://www.canva.com/design/DAGyf_fLCCM/j_TjP4mDmrLsmDznyjd9cQ/edit?utm_content=DAGyf_fLCCM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
-         target="_blank" class="btn">Deck</a>
-      <a href="https://public.tableau.com/app/profile/nada.farhani/viz/LateShipmentAnalysis_17579374188130/Dashboard1?publish=yes" 
-         target="_blank" class="btn btn-secondary">Dashboard</a>
-    </div>
-  </div>
-</div>
+            <!-- Add more project cards here following the same pattern -->
 
         </div>
     </div>
 </section>
+
+<!-- Project Modal -->
+<div id="modal-lateship" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('lateship')">&times;</span>
+
+        <h2>Late Shipment Analysis</h2>
+        <img src="assets/images/project-lateship.png" alt="Late Shipment Dashboard" class="modal-image">
+
+        <div class="project-details">
+            <div class="detail-section">
+                <h4><i class="fas fa-exclamation-circle"></i> Problem</h4>
+                <p>Frequent delivery delays and inconsistent shipping performance reduced customer satisfaction and hindered logistics planning.</p>
+            </div>
+
+            <div class="detail-section">
+                <h4><i class="fas fa-info-circle"></i> Background</h4>
+                <p>Investigated delivery delays to identify key operational and regional factors impacting on-time performance (OTD%).</p>
+            </div>
+
+            <div class="detail-section">
+                <h4><i class="fas fa-cogs"></i> Method</h4>
+                <p>Performed EDA and regression modeling using Python to quantify the influence of shipment features on delay likelihood.</p>
+            </div>
+
+            <div class="detail-section">
+                <h4><i class="fas fa-chart-line"></i> Output</h4>
+                <p>Revealed significant predictors such as carrier and destination region, enabling targeted strategies that improved OTD% and overall logistics efficiency.</p>
+            </div>
+        </div>
+
+        <div class="project-buttons">
+            <a href="https://www.canva.com/design/DAGyf_fLCCM/j_TjP4mDmrLsmDznyjd9cQ/edit?utm_content=DAGyf_fLCCM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+               target="_blank" class="btn"><i class="fas fa-presentation"></i> View Deck</a>
+            <a href="https://public.tableau.com/app/profile/nada.farhani/viz/LateShipmentAnalysis_17579374188130/Dashboard1?publish=yes" 
+               target="_blank" class="btn btn-secondary"><i class="fas fa-chart-bar"></i> View Dashboard</a>
+        </div>
+    </div>
+</div>
 
 <!-- EXPERIENCE SECTION -->
 <section id="experience" class="section">
@@ -199,64 +212,99 @@
 <section id="skills" class="section">
     <div class="container">
         <h2>Skillset</h2>
-        <div class="skills-table">
-            <!-- Column 1: Data Visualization -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-chart-pie"></i>
-                    <h3>Data Visualization</h3>
+        
+        <!-- Data Visualization -->
+        <div class="skill-category">
+            <h3><i class="fas fa-chart-line"></i> Data Visualization</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-microsoft skill-icon"></i>
+                    <span>Power BI</span>
                 </div>
-                <ul class="skill-list">
-                    <li>Power BI</li>
-                    <li>Tableau</li>
-                    <li>Looker Studio</li>
-                    <li>Excel Dashboards</li>
-                </ul>
-            </div>
-
-            <!-- Column 2: Data Analysis -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-search-plus"></i>
-                    <h3>Data Analysis</h3>
+                <div class="skill-item">
+                    <i class="fas fa-chart-area skill-icon"></i>
+                    <span>Tableau</span>
                 </div>
-                <ul class="skill-list">
-                    <li>SQL</li>
-                    <li>Excel</li>
-                    <li>Python</li>
-                    <li>Google Sheets</li>
-                </ul>
-            </div>
-
-            <!-- Column 3: Business Intelligence & Analytics -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Business Intelligence & Analytics</h3>
+                <div class="skill-item">
+                    <i class="fab fa-google skill-icon"></i>
+                    <span>Looker Studio</span>
                 </div>
-                <ul class="skill-list">
-                    <li>A/B Testing</li>
-                    <li>Statistical Analysis</li>
-                    <li>Predictive Modeling</li>
-                    <li>KPI Development</li>
-                </ul>
-            </div>
-
-            <!-- Column 4: Soft Skills -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-search-plus"></i>
-                    <h3>Softskill</h3>
+                <div class="skill-item">
+                    <i class="fas fa-table skill-icon"></i>
+                    <span>Excel Dashboards</span>
                 </div>
-                <ul class="skill-list">
-                    <li>Critical Thinking</li>
-                    <li>Adaptability</li>
-                    <li>Collaboration</li>
-                    <li>Attention to Detail</li>
-                </ul>
             </div>
-
         </div>
+
+        <!-- Data Analysis -->
+        <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Data Analysis</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-database skill-icon"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-file-excel skill-icon"></i>
+                    <span>Excel</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python skill-icon"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-google skill-icon"></i>
+                    <span>Google Sheets</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Intelligence & Analytics -->
+        <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> Business Intelligence & Analytics</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-vial skill-icon"></i>
+                    <span>A/B Testing</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-pie skill-icon"></i>
+                    <span>Statistical Analysis</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-project-diagram skill-icon"></i>
+                    <span>Predictive Modeling</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-bullseye skill-icon"></i>
+                    <span>KPI Development</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category">
+            <h3><i class="fas fa-users"></i> Soft Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-lightbulb skill-icon"></i>
+                    <span>Critical Thinking</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-sync-alt skill-icon"></i>
+                    <span>Adaptability</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-handshake skill-icon"></i>
+                    <span>Collaboration</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-search skill-icon"></i>
+                    <span>Attention to Detail</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -305,16 +353,23 @@
 
 <script>
 function openModal(id) {
-  document.getElementById('modal-' + id).style.display = 'flex';
-  document.body.style.overflow = 'hidden'; // prevent scrolling behind modal
+    document.getElementById('modal-' + id).style.display = 'flex';
+    document.body.style.overflow = 'hidden';
 }
 
 function closeModal(id) {
-  document.getElementById('modal-' + id).style.display = 'none';
-  document.body.style.overflow = 'auto';
+    document.getElementById('modal-' + id).style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    if (event.target.className === 'modal') {
+        event.target.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
 }
 </script>
 
-    
 </body>
 </html>
